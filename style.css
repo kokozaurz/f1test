@@ -1,0 +1,500 @@
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
+p,
+div,
+body,
+span,
+.noselect {
+	  -webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */
+	     -khtml-user-select: none; /* Konqueror HTML */
+	       -moz-user-select: none; /* Firefox */
+	        -ms-user-select: none; /* Internet Explorer/Edge */
+	            user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none; -moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	standard-user-select: none;
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.en, .fr {
+	display: none;
+}
+
+script {
+	display: none;
+}
+
+a {
+	text-decoration: underline;
+	color: #00A19C;
+}
+
+.center {
+	text-align: center;
+}
+
+#go {
+	z-index: 9999;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	background: #000;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	-webkit-overflow-scrolling: touch;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+img.logo {
+	width: 45vw;
+	height: auto;
+	max-width: 240px;
+	padding: 7vw 0 7vw 7vw;
+}
+
+div.full {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+	overflow: auto;
+	height: 100vh;
+}
+
+div.fixe {
+	overflow: hidden!important;
+	position: fixed!important;
+	touch-action: none;
+	width: 100%;
+}
+
+#welcome {
+	height: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	background: #000 url(img/f1_fond.gif) center bottom no-repeat;
+	background-size: 100%;
+	background-size: 100vw;
+}
+
+#welcome .langue {
+	float: right;
+	padding: 4vw;
+	font-size: 12px;
+	color: #00A19C;
+	font-weight: 700;
+	margin-top: 6.5%;
+	margin-top: 6.5vw;
+}
+
+#fondflou {
+	position: absolute;
+	top: 32%;
+	top: calc(var(--vh, 1vh) * 32);
+}
+
+#proreac {
+	max-width:80vw;
+	max-height: 25vw;
+	position: absolute;
+	top: calc(var(--vh, 1vh) * 16);
+	margin-left: 4%;
+	margin-left: 4vw;
+	left: -100%;
+	left: -100vw;
+	z-index: 888;
+}
+
+
+#swipe {
+	position: absolute;
+	top: 57%;
+	top: calc(var(--vh, 1vh) * 57);
+	color: #00A19C;
+	text-align: center;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Daimler CSPro', sans-serif;
+	position: absolute;
+	left: 100%;
+	left: 100vw;
+	width: 100%;
+	width: 100vw;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 26px;
+	padding: 26px 4vw;
+	margin: 0;
+	text-align: left;
+	font-family: 'Daimler CSPro', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 22px;
+	padding: 22px 4vw;
+	text-align: left;
+	margin: 0;
+	font-family: 'Daimler CSPro', sans-serif;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 16px;
+	padding: 16px 4vw;
+	text-align: left;
+	margin: 0;
+	font-family: 'Daimler CSPro', sans-serif;
+	text-transform: uppercase;
+}
+
+h1 b, h2 b, h3 b {
+	font-weight: 900;
+}
+
+.bleue {
+	color: #00A19C;
+}
+
+p {
+	padding: 16px 4%;
+	padding: 16px 4vw;
+	margin: 0;
+	font-size: 18px;
+	text-align: left;
+	line-height: 23px;
+	color: #fff;
+}
+
+p b {
+	font-weight: 700;
+}
+
+p b.large {
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+	font-family: 'Daimler CSPro';
+	line-height: 0;
+}
+
+p sub {
+	line-height: 0;
+	font-size: 12px;
+}
+
+img.full {
+	display: block;
+	width: 100%;
+	width: 100vw;
+	height: auto;
+	margin: 0;
+}
+
+span.bouton {
+	display: inline-block;
+	position: relative;
+	margin: 20px 0 10px;
+	width: 160px;
+	height: 160px;
+	background: #00A19C url('img/bouton2.png') center center no-repeat;
+	background-size: 160px 160px;
+	border: 4px #000 solid;
+	color: #fff;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Daimler CSPro';
+
+	transition: all .15s ease;
+	-moz-transition: all .15s ease;
+	-webkit-transition: all .15s ease;
+	-o-transition: all .15s ease;
+}
+
+span.bouton.on {
+	color: #00A19C;
+	background-color: #000;
+}
+
+span.bouton span {
+	padding-top: 72px;
+	display: inline-block;
+	font-family: 'Daimler CSPro';
+}
+
+span.bouton span.ligne {
+	padding-top: 56px;
+}
+
+.boutinvite {
+	font-weight: 900;
+	font-size: 18px;
+	display: inline-block;
+	padding: 2vw 4vw;
+	color: #fff;
+	background-color: #00A19C;
+
+}
+
+span.light {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 32px;
+	background: #AFAFAF;
+	touch-action: none;
+	border: 12px #000 solid;
+	transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	opacity: 1;
+	transform: scale(1);
+	margin-top: 12px;
+}
+
+span.light.off {
+	background: #fff;
+	transform: scale(.8);
+	border: 12px #fff solid;
+	opacity: 0;
+}
+
+span.light.on {
+	box-shadow: 0 0 5px #fff;
+	background: #00A19C;
+	transition: none;
+	top: 10px!important;
+	left:25px!important;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+
+#countdown {
+	font-family: 'Daimler CSPro', sans-serif;
+	color: #00A19C;
+	font-size: 250px;
+	display: block;
+	position: absolute;
+	top: 20vh;
+	text-align: center;
+	width: 100%;
+	z-index: 999999999;
+	font-weight: 900;
+	font-style: italic;
+
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  margin: 0;
+  padding-right: 4vw;
+}
+
+ul li {
+	color: #fff;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #fff; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+#countdown span {
+	font-size: 20vw;
+	padding-top: 25vw;
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: 20vw;
+	display: block;
+}
+
+#barre {
+	padding: 4% 0 0;
+	padding: 4vw 0 0;
+	background: #222 url(img/star.png) center center no-repeat;
+	background-size: 50px 50px;
+
+	color: #fff;
+	font-weight: 900;
+	font-size: 40px;
+	font-family: 'Daimler CSPro', sans-serif;
+}
+
+#barre img {
+	width: 35px;
+	height: 35px;
+}
+
+#light1 {
+	top: 13%;
+	top: 13vh;
+	top: calc(var(--vh, 1vh) * 13);
+	left: 5%;
+	left: 5vw;
+}
+
+#light2 {
+	top: 13%;
+	top: 13vh;
+	top: calc(var(--vh, 1vh) * 13);
+	right: 5%;
+	right: 5vw;
+}
+
+#light3 {
+	top: 28%;
+	top: 28vh;
+	top: calc(var(--vh, 1vh) * 28);
+	left: 20%;
+	left: 20vw;
+}
+
+#light4 {
+	top: 28%;
+	top: 28vh;
+	top: calc(var(--vh, 1vh) * 28);
+	right: 20%;
+	right: 20vw;
+}
+
+#light5 {
+	top: 43%;
+	top: 43vh;
+	top: calc(var(--vh, 1vh) * 43);
+	right: 5%;
+	right: 5vw;
+}
+
+#light6 {
+	top: 43%;
+	top: 43vh;
+	top: calc(var(--vh, 1vh) * 43);
+	left: 5%;
+	left: 5vw;
+}
+
+#light7 {
+	top: 41%;
+	top: 41vh;
+	top: calc(var(--vh, 1vh) * 41);
+	left: 50%;
+	left: 50vw;
+	margin-left: -22px;
+}
+
+#light8 {
+	top: 58%;
+	top: 58vh;
+	top: calc(var(--vh, 1vh) * 58);
+	left: 20%;
+	left: 20vw;
+}
+
+#light9 {
+	top: 58vh;
+	top: calc(var(--vh, 1vh) * 58);
+	right: 20%;
+	right: 20vw;
+}
+
+#light10 {
+	top: 73%;
+	top: 73vh;
+	top: calc(var(--vh, 1vh) * 73);
+	right: 5%;
+	right: 5vw;
+}
+
+#light11 {
+	top: 71%;
+	top: 71vh;
+	top: calc(var(--vh, 1vh) * 71);
+	left: 50%;
+	left: 50vw;
+	margin-left: -22px;
+}
+
+#light12 {
+	top: 73%;
+	top: 73vh;
+	top: calc(var(--vh, 1vh) * 73);
+	left: 5%;
+	left: 5vw;
+}
+
+input[type=tel],
+input[type=email],
+input[type=text] {
+	border: 1px solid #000;
+	width: 92vw;
+	margin: 4px 0 4px 4vw;
+	color: #000;
+	background: #fff;
+	padding: 2vw;
+	font-size: 16px;
+	font-family: 'Arial', sans-serif;
+	border-radius: 0;
+	box-sizing: border-box;
+	resize: vertical;
+	box-shadow: none;
+}
+
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=text]:focus {
+	border-color: #00A19C;
+}
+
+.warning {
+	display: none;
+}
+
+.warning p {
+	font-weight: 900;
+	font-style: italic;
+	font-size: 20px;
+	min-height: 80px;
+}
+
+@media all and (orientation:landscape){
+	.warning {
+		display: block;
+
+	}
+}
+
+
